@@ -1,0 +1,141 @@
+*{
+    font-family: "lobstar two", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background: #081b29;
+  color: #ededed;
+}
+
+.header{
+position: fixed;
+top:0;
+left: 0;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #00abf0;
+padding: 20px 10px;
+z-index: 100;
+}
+span{
+    color: #000;
+}
+.logo{
+    font-size :25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+.nav-bar a {
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.nav-bar a:hover,
+.nav-bar a:active{color: #fff;
+}
+.home{
+    display: flex;
+    height: 100vh;
+    align-items:center;
+    padding:30px 12% 0;
+    gap: 7em;
+
+}
+.home-content{
+    max-width :600px;   
+} 
+.home-content h1{
+    font-size:56px;
+    font-weight:700;
+    line-height:1.2;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #178d7388;
+}
+.home-content p {
+    font-size: 16px;
+    margin:20px 0 40px;
+}
+.home-content  .btn-box{
+  width: 345px;
+  height:50px;
+  
+
+}
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #62dedc;
+    border:2px solid black;
+    border-radius :8px;
+    font-weight: 600;
+    font-size: 19px;
+    letter-spacing: 1px;
+    color: #000;
+    text-decoration: none;
+    z-index: 1; 
+   overflow: hidden;
+} 
+.btn-box a::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:#178d7388 ;
+   z-index: -1;
+   transition: .5s;
+}  
+.btn-box a:hover::before{
+    width:100% ;
+}
+.home-sci{
+ position: absolute;
+ bottom: 40px;
+ width: 170px;
+ display: flex;
+ justify-content: space-between;
+}
+.home-sci a {
+    position: relative;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+background: #8ec0d4;
+border: 2px solid #00abf0;
+border-radius: 50%;
+font-size: 20px;
+color: #00abf0;
+text-decoration: none;
+}
+.img-box img{
+border-radius: 50%;
+width: 250px;
+
+}
+    
+
+.container{
+background:#178d7388 ;
+max-width: 2000px;
+
+
+}
